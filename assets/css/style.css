@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.post-block {
+  width: 80%;
+  margin: 0 auto;
+}
