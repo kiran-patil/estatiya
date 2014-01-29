@@ -14,3 +14,14 @@
   width: 80%;
   margin: 0 auto;
 }
+
+.profile-pic {
+  height: 55px;
+  width: 55px;
+  float: left;
+}
+
+.post-article-block {
+  border: 1px solid #999;
+  border-radius: 5px;
+}
