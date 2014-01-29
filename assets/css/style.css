@@ -23,5 +23,49 @@
 
 .post-article-block {
   border: 1px solid #999;
+  height: 135px;
   border-radius: 5px;
+  float: left;
+  width: 50%;
 }
+
+.post-nav {
+  margin: 0;
+  background: #ccc;
+  overflow: hidden;
+  height: 135px;
+}
+
+.post-nav li { 
+  list-style-type: none; 
+  display: block;
+  float: left;
+  padding: 3% 5%;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+  position: relative;
+}
+
+.post-nav li:first-child {
+  border-left: none;
+}
+
+.post-nav ul {
+  height: 93px;
+    left: -55px;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+}
+.post-nav ul li textarea {
+ height: 68px;
+    width: 484px;
+}
+
+.active-post {
+  background: url(../images/active-arrow.png) no-repeat;
+  background-position: 93px bottom;
+}
+
+.article, .link { display: none; }
