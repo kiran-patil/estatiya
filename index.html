@@ -15,23 +15,71 @@
         </div>
         <div class="post-article-block">
           <ul class="post-nav">
-            <li class="active-post">+Add Property
+            <li class="active-post" id="one">+ Add Property
               <ul  class="property">
                 <li><textarea></textarea></li>
               </ul>
             </li>
-            <li>+Add Article</li>
-            <li>+Add Link
-              <ul  class="link">
-                <li><a href="http://www.google.com"> google.com</a></li>
+            <li id="sec">+ Add Article
+              <ul class="article">
+                <li><textarea></textarea></li>
               </ul>
             </li>
+            <li id="third">+ Add Link
+              <ul class="link">
+                <li><textarea></textarea></li>
+              </ul>
+            </li>
+            <li id="nav" style="border: none;">
+              <span class="act-one act"></span>
+              <span class="act-two"></span>
+              <span class="act-three"></span>
+            </li>
           </ul>
+          <select>
+            <option>public</option>
+            <option>private</option>
+          </select>
+          <a href="#" class="next-btn"></a>
         </div>
       </div>
     </div>
   </div>
-  
-  <script></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script>
+    alert('hi');
+	$('.post-nav li#one').click(function(){
+	$('.property').show();	
+	$('.article').hide();
+	$('.link').hide(); 
+	$('.post-nav li').removeClass('active-post') 
+	$(this).addClass('active-post') 
+	$('#nav span').removeClass('act')
+	$('.act-one').addClass('act')
+	})
+	
+	$('.post-nav li#sec').click(function(){
+
+	$('.property').hide();	
+	$('.article').show();
+	$('.link').hide();  
+	$('.post-nav li').removeClass('active-post')
+	$(this).addClass('active-post') 
+	$('#nav span').removeClass('act')
+	$('.act-two').addClass('act')
+	})
+	
+	$('.post-nav li#third').click(function(){
+
+	$('.property').hide();	
+	$('.article').hide();
+	$('.link').show();  
+	$('.post-nav li').removeClass('active-post')
+	$(this).addClass('active-post') 
+	$('#nav span').removeClass('act')
+	$('.act-three').addClass('act')
+	})
+	
+  </script>
 </body>
 </html>
